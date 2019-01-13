@@ -1,0 +1,41 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a21f7a093dd8cd126d2f25beec8b2f40f463de2cd8612491e02a44339ea47ec6
+
+name:           pretty-printer
+version:        0.1.0.0
+category:       Text
+homepage:       https://github.com/kove-w-o-salter/pretty-printer#readme
+bug-reports:    https://github.com/kove-w-o-salter/pretty-printer/issues
+author:         Kove W. Ochre-Salter
+maintainer:     kove.w.o.salter@gmail.com
+copyright:      (c) Kove W. Ochre-Salter, 2019
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/kove-w-o-salter/pretty-printer
+
+library
+  exposed-modules:
+      Text.PrettyPrinter
+      Text.PrettyPrinter.Internal
+  other-modules:
+      Text.PrettyPrinter.Test
+      Paths_pretty_printer
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , bytestring >=0.10.8.2
+    , lens >=4.17
+    , mtl >=2.2.2
+    , text >=1.2.3.1
+  default-language: Haskell2010
